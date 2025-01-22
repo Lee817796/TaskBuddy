@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Checks if the TaskName has a input.</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>TaskName-validation</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+    var taskName = g_form.getValue('task_name');
+
+    if (taskName == '') {
+        g_form.showFieldMsg('task_name', 'Das Feld "Task Name" darf nicht leer sein!', 'error');
+        return false;
+    }
+
+    return true;
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 09:46:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13bb56d883871610e9ef58a6feaad3a5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>TaskName-validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_update_name>sys_script_client_13bb56d883871610e9ef58a6feaad3a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 09:48:56</sys_updated_on>
+        <table>x_1529240_taskbudd_tasks</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
