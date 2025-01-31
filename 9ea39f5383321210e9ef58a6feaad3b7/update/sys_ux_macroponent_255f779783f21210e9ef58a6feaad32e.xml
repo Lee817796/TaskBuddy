@@ -797,7 +797,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "Button"
+                                            "message": "Submit"
                                         }
                                     },
                                     "landmark": {
@@ -818,7 +818,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "secondary"
+                                        "value": "primary"
                                     }
                                 },
                                 "slot": null,
@@ -1009,55 +1009,26 @@
         "styles": null
     },
     {
-        "bundleLink": {
-            "bundleInstanceId": "recordlist_1",
-            "elementType": "root"
-        },
-        "conditionals": null,
         "definition": {
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
         },
-        "elementId": "list_bundle",
-        "elementLabel": "Record List",
+        "elementId": "column_layout_3",
+        "elementLabel": "Column layout 3",
         "eventMappings": [],
-        "isHidden": null,
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
         "overrides": {
             "composition": [
                 {
-                    "bundleLink": {
-                        "bundleInstanceId": "recordlist_1",
-                        "elementType": "member"
-                    },
-                    "conditionals": null,
                     "definition": {
-                        "id": "b685c9c6773ab64a2c11c88564fc9f62",
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
                         "type": "MACROPONENT"
                     },
-                    "elementId": "record_list_header_1",
-                    "elementLabel": "Record List Header",
-                    "eventMappings": [],
-                    "isHidden": null,
-                    "preset": {
-                        "controllerElementId": "list_controller",
-                        "disabledEventTargetIds": [],
-                        "id": "7390b78659717406599eca6a55e68c44"
-                    },
-                    "propertyValues": {},
-                    "slot": null,
-                    "styles": null
-                },
-                {
-                    "bundleLink": {
-                        "bundleInstanceId": "recordlist_1",
-                        "elementType": "member"
-                    },
-                    "definition": {
-                        "id": "07b0bb09419d26f0af681796bc548f19",
-                        "type": "MACROPONENT"
-                    },
-                    "elementId": "resizable_panes_1",
-                    "elementLabel": "Resizable panes 1",
+                    "elementId": "__cmggklmfbbkaabbzdddffiiffvbbbbjjjjjffh__column_1",
+                    "elementLabel": "Column 1",
                     "eventMappings": [],
                     "isHidden": {
                         "type": "JSON_LITERAL",
@@ -1066,32 +1037,26 @@
                     "overrides": {
                         "composition": [
                             {
-                                "bundleLink": {
-                                    "bundleInstanceId": "recordlist_3",
-                                    "elementType": "root"
-                                },
-                                "conditionals": null,
                                 "definition": {
-                                    "id": "d356d14b6e293a3020a244b63d278d8f",
-                                    "type": "MACROPONENT"
+                                    "id": "REPEATER",
+                                    "type": "REPEATER"
                                 },
-                                "elementId": "list_bundle_2",
-                                "elementLabel": "Record List 2",
+                                "elementId": "repeater_1",
+                                "elementLabel": "Repeater 1",
                                 "eventMappings": [],
-                                "isHidden": null,
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
                                 "overrides": {
                                     "composition": [
                                         {
-                                            "bundleLink": {
-                                                "bundleInstanceId": "recordlist_3",
-                                                "elementType": "member"
-                                            },
                                             "definition": {
-                                                "id": "07b0bb09419d26f0af681796bc548f19",
+                                                "id": "e772e788e32ce32b8daa2ac7b092d2c6",
                                                 "type": "MACROPONENT"
                                             },
-                                            "elementId": "resizable_panes_2",
-                                            "elementLabel": "Resizable panes 2",
+                                            "elementId": "disp_task_all",
+                                            "elementLabel": "Disp_Task_All",
                                             "eventMappings": [],
                                             "isHidden": {
                                                 "type": "JSON_LITERAL",
@@ -1100,170 +1065,220 @@
                                             "overrides": {
                                                 "composition": [
                                                     {
-                                                        "bundleLink": {
-                                                            "bundleInstanceId": "recordlist_3",
-                                                            "elementType": "member"
-                                                        },
-                                                        "conditionals": null,
                                                         "definition": {
-                                                            "id": "eee2590820335fa22d8fb7319a825a82",
+                                                            "id": "1f6e0643eca7a637e36bd7833549ec9e",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "presentational_list_2",
-                                                        "elementLabel": "Presentational List 2",
+                                                        "elementId": "disp_task_name",
+                                                        "elementLabel": "Disp_Task_Name",
                                                         "eventMappings": [],
-                                                        "isHidden": null,
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
                                                         "preset": {
-                                                            "controllerElementId": "list_controller_3",
+                                                            "controllerElementId": "list_controller",
                                                             "disabledEventTargetIds": [],
-                                                            "id": "33f6672f7d096e5a32e4e96b497748e4"
+                                                            "id": "a31b1e1df601666ebf2b4086bde1f706"
                                                         },
                                                         "propertyValues": {
-                                                            "options": {
+                                                            "hasNoMargin": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": {}
+                                                                "value": false
+                                                            },
+                                                            "label": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "task_name",
+                                                                        "displayValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            },
+                                                            "level": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "1"
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "header-tertiary"
+                                                            },
+                                                            "wontWrap": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
                                                             }
                                                         },
-                                                        "slot": "left",
-                                                        "styles": {
-                                                            "height": "fit-content"
-                                                        }
+                                                        "slot": null,
+                                                        "styles": null
                                                     },
                                                     {
-                                                        "bundleLink": {
-                                                            "bundleInstanceId": "recordlist_3",
-                                                            "elementType": "member"
-                                                        },
                                                         "definition": {
-                                                            "id": "MACROPONENT_VIEWPORT_HEADLESS",
-                                                            "type": "MACROPONENT_VIEWPORT_HEADLESS"
+                                                            "id": "7fdccde954f753ae89139c6c24551be5",
+                                                            "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "list_panel_viewport_2",
-                                                        "elementLabel": "List Panel Viewport 2",
+                                                        "elementId": "priority_indicator",
+                                                        "elementLabel": "Priority_Indicator",
                                                         "eventMappings": [],
-                                                        "extensionPoints": [
-                                                            {
-                                                                "controllerElementId": "list_controller_3",
-                                                                "name": "List Page Panes",
-                                                                "sysId": "4d9e0c2143efa11041505119ebb8f270"
-                                                            }
-                                                        ],
                                                         "isHidden": {
                                                             "type": "JSON_LITERAL",
                                                             "value": null
                                                         },
                                                         "preset": null,
                                                         "propertyValues": {
-                                                            "pageCollectionMode": {
+                                                            "color": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": true
+                                                                "value": "info"
+                                                            },
+                                                            "icon": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "ai-sparkle-outline"
+                                                            },
+                                                            "label": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "priority",
+                                                                        "displayValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            },
+                                                            "variant": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "tertiary"
+                                                            },
+                                                            "willWrap": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
                                                             }
                                                         },
-                                                        "slot": "right",
+                                                        "slot": null,
                                                         "styles": null
-                                                    }
-                                                ]
-                                            },
-                                            "preset": {
-                                                "controllerElementId": "list_controller_3",
-                                                "disabledEventTargetIds": [],
-                                                "id": "c98d4a8dfa4f61d096e06642b002039f"
-                                            },
-                                            "propertyValues": {},
-                                            "slot": null,
-                                            "styles": null
-                                        },
-                                        {
-                                            "bundleLink": {
-                                                "bundleInstanceId": "recordlist_3",
-                                                "elementType": "member"
-                                            },
-                                            "conditionals": null,
-                                            "definition": {
-                                                "id": "63ea66b3c5a122819f729b7254789c34",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementId": "pagination_control_2",
-                                            "elementLabel": "Pagination control 2",
-                                            "eventMappings": [],
-                                            "isHidden": null,
-                                            "preset": {
-                                                "controllerElementId": "list_controller_3",
-                                                "disabledEventTargetIds": [],
-                                                "id": "47d85e949cd381e3930037367b16fdaa"
-                                            },
-                                            "propertyValues": {},
-                                            "slot": "",
-                                            "styles": null
-                                        },
-                                        {
-                                            "bundleLink": {
-                                                "bundleInstanceId": "recordlist_3",
-                                                "elementType": "member"
-                                            },
-                                            "definition": {
-                                                "id": "d356d14b6e293a3020a244b63d278d8f",
-                                                "type": "MACROPONENT"
-                                            },
-                                            "elementId": "record_list_footer_container_2",
-                                            "elementLabel": "Footer Container 2",
-                                            "eventMappings": [],
-                                            "isHidden": {
-                                                "operation": {
-                                                    "operand": {
-                                                        "binding": {
-                                                            "address": [
-                                                                "list_controller_3",
-                                                                "listProps",
-                                                                "enableViewAllLink"
-                                                            ]
-                                                        },
-                                                        "type": "DATA_OUTPUT_BINDING"
                                                     },
-                                                    "operator": "NOT"
-                                                },
-                                                "type": "UNARY"
-                                            },
-                                            "overrides": {
-                                                "composition": [
                                                     {
-                                                        "bundleLink": {
-                                                            "bundleInstanceId": "recordlist_3",
-                                                            "elementType": "member"
-                                                        },
                                                         "definition": {
-                                                            "id": "abe7db0526ec8705a0eff03521febfa3",
+                                                            "id": "bb63b710d208796b7ceaab7812bddef1",
                                                             "type": "MACROPONENT"
                                                         },
-                                                        "elementId": "view_all_link_2",
-                                                        "elementLabel": "View All Link 2",
+                                                        "elementId": "con_created_date",
+                                                        "elementLabel": "Con_Created_Date",
                                                         "eventMappings": [],
-                                                        "isHidden": null,
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Created:"
+                                                                }
+                                                            },
+                                                            "reversed": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "truncated": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "value": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "creation_date",
+                                                                        "displayValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "bb63b710d208796b7ceaab7812bddef1",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "con_due_date",
+                                                        "elementLabel": "Con_Due_Date",
+                                                        "eventMappings": [],
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
+                                                        "preset": null,
+                                                        "propertyValues": {
+                                                            "label": {
+                                                                "type": "TRANSLATION_LITERAL",
+                                                                "value": {
+                                                                    "code": null,
+                                                                    "comment": "",
+                                                                    "message": "Due-Date:"
+                                                                }
+                                                            },
+                                                            "reversed": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "truncated": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": false
+                                                            },
+                                                            "value": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "due_date",
+                                                                        "displayValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
+                                                            }
+                                                        },
+                                                        "slot": null,
+                                                        "styles": null
+                                                    },
+                                                    {
+                                                        "definition": {
+                                                            "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                                            "type": "MACROPONENT"
+                                                        },
+                                                        "elementId": "con_description",
+                                                        "elementLabel": "Con_Description",
+                                                        "eventMappings": [],
+                                                        "isHidden": {
+                                                            "type": "JSON_LITERAL",
+                                                            "value": null
+                                                        },
                                                         "preset": {
-                                                            "controllerElementId": "list_controller_3",
+                                                            "controllerElementId": "list_controller",
                                                             "disabledEventTargetIds": [],
-                                                            "id": "420a0cb7b684a7db1915765e1b4d64d1"
+                                                            "id": "a17a79d080156d069c3eb0dc44220d26"
                                                         },
                                                         "propertyValues": {
-                                                            "download": {
+                                                            "configAria": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": {}
                                                             },
-                                                            "iconEnd": {
+                                                            "css": {
                                                                 "type": "JSON_LITERAL",
-                                                                "value": null
+                                                                "value": "* { }"
                                                             },
-                                                            "iconStart": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": null
-                                                            },
-                                                            "opensWindow": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
-                                                            },
-                                                            "underlined": {
-                                                                "type": "JSON_LITERAL",
-                                                                "value": false
+                                                            "text": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "description",
+                                                                        "displayValue"
+                                                                    ],
+                                                                    "category": "value"
+                                                                },
+                                                                "type": "REPEATER_ITEM_BINDING"
                                                             }
                                                         },
                                                         "slot": null,
@@ -1275,26 +1290,46 @@
                                                         "children": null,
                                                         "items": [
                                                             {
-                                                                "element_id": "view_all_link_2",
+                                                                "element_id": "disp_task_name",
+                                                                "styles": {}
+                                                            },
+                                                            {
+                                                                "element_id": "priority_indicator",
+                                                                "styles": {}
+                                                            },
+                                                            {
+                                                                "element_id": "con_created_date",
                                                                 "styles": {
-                                                                    "font-size": "var(--now-global-font-size--md)",
-                                                                    "margin-left": "var(--now-scalable-space--lg)",
-                                                                    "padding": "var(--now-scalable-space--lg)",
-                                                                    "padding-bottom": "var(--now-scalable-space--lg)",
-                                                                    "padding-left": "var(--now-scalable-space--lg)",
-                                                                    "padding-right": "var(--now-scalable-space--lg)",
-                                                                    "padding-top": "var(--now-scalable-space--lg)"
+                                                                    "margin-top": "var(--now-scalable-space--sm)"
                                                                 }
+                                                            },
+                                                            {
+                                                                "element_id": "con_due_date",
+                                                                "styles": {
+                                                                    "border-color": "RGB(var(--now-color--neutral-5))",
+                                                                    "border-style": "solid",
+                                                                    "border-width": "var(--now-static-space--xxs)",
+                                                                    "margin": "var(--now-scalable-space--sm)",
+                                                                    "margin-bottom": "var(--now-scalable-space--sm)",
+                                                                    "margin-left": "0",
+                                                                    "margin-right": "0",
+                                                                    "margin-top": "var(--now-scalable-space--sm)"
+                                                                }
+                                                            },
+                                                            {
+                                                                "element_id": "con_description",
+                                                                "styles": {}
                                                             }
                                                         ],
                                                         "root": null,
                                                         "rules": null,
                                                         "styles": {
-                                                            "align-items": "center",
-                                                            "display": "flex",
-                                                            "flex-direction": "row",
-                                                            "height": "40px",
-                                                            "width": "100%"
+                                                            "flex-direction": "column",
+                                                            "margin": "var(--now-scalable-space--xs)",
+                                                            "margin-bottom": "var(--now-scalable-space--xs)",
+                                                            "margin-left": "var(--now-scalable-space--xs)",
+                                                            "margin-right": "var(--now-scalable-space--xs)",
+                                                            "margin-top": "var(--now-scalable-space--xs)"
                                                         },
                                                         "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                                         "type": "flex"
@@ -1304,37 +1339,33 @@
                                             },
                                             "preset": null,
                                             "propertyValues": {
-                                                "ariaRegionHeadingLevel": {
+                                                "configAria": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "1"
+                                                    "value": null
                                                 },
-                                                "ariaRegionName": {
-                                                    "type": "TRANSLATION_LITERAL",
-                                                    "value": {
-                                                        "code": null,
-                                                        "comment": "",
-                                                        "message": ""
-                                                    }
-                                                },
-                                                "ariaRole": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": ""
-                                                },
-                                                "hideEmptyStateUi": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": true
-                                                },
-                                                "includeAriaHeading": {
+                                                "hideShadow": {
                                                     "type": "JSON_LITERAL",
                                                     "value": false
                                                 },
-                                                "slotWrapperBehavior": {
+                                                "interaction": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "fullheight"
+                                                    "value": "click"
                                                 },
-                                                "type": {
+                                                "manageSelected": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": "section"
+                                                    "value": false
+                                                },
+                                                "selected": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "sidebar": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": {}
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "lg"
                                                 }
                                             },
                                             "slot": null,
@@ -1346,214 +1377,212 @@
                                             "children": null,
                                             "items": [
                                                 {
-                                                    "element_id": "resizable_panes_2",
+                                                    "element_id": "disp_task_all",
                                                     "styles": {
-                                                        "height": "",
-                                                        "min-height": "305px"
+                                                        "width": "100%"
                                                     }
-                                                },
-                                                {
-                                                    "element_id": "pagination_control_2",
-                                                    "styles": {
-                                                        "min-height": "unset",
-                                                        "min-width": "unset"
-                                                    }
-                                                },
-                                                {
-                                                    "element_id": "record_list_footer_container_2",
-                                                    "styles": {}
                                                 }
                                             ],
                                             "root": null,
                                             "rules": null,
                                             "styles": {
-                                                "flex-direction": "column",
-                                                "height": "100%"
+                                                "display": "grid",
+                                                "grid-auto-columns": "1fr",
+                                                "grid-auto-rows": "1fr",
+                                                "grid-template-columns": "1fr 1fr 1fr 1fr",
+                                                "grid-template-rows": "1fr 1fr"
                                             },
                                             "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                                            "type": "flex"
+                                            "type": "grid"
                                         },
                                         "version": "3.0.0"
                                     }
                                 },
                                 "preset": null,
-                                "propertyValues": {
-                                    "ariaRegionHeadingLevel": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "1"
+                                "propertyValues": {},
+                                "repeatWith": {
+                                    "binding": {
+                                        "address": [
+                                            "tasks_lookup",
+                                            "results"
+                                        ]
                                     },
-                                    "ariaRegionName": {
-                                        "type": "TRANSLATION_LITERAL",
-                                        "value": {
-                                            "code": null,
-                                            "comment": "",
-                                            "message": ""
-                                        }
-                                    },
-                                    "ariaRole": {
-                                        "type": "JSON_LITERAL",
-                                        "value": ""
-                                    },
-                                    "hideEmptyStateUi": {
-                                        "type": "JSON_LITERAL",
-                                        "value": true
-                                    },
-                                    "includeAriaHeading": {
-                                        "type": "JSON_LITERAL",
-                                        "value": false
-                                    },
-                                    "type": {
-                                        "type": "JSON_LITERAL",
-                                        "value": "section"
-                                    }
+                                    "type": "DATA_OUTPUT_BINDING"
                                 },
-                                "slot": "left",
-                                "styles": null
-                            },
-                            {
-                                "bundleLink": {
-                                    "bundleInstanceId": "recordlist_1",
-                                    "elementType": "member"
-                                },
-                                "definition": {
-                                    "id": "MACROPONENT_VIEWPORT_HEADLESS",
-                                    "type": "MACROPONENT_VIEWPORT_HEADLESS"
-                                },
-                                "elementId": "list_panel_viewport",
-                                "elementLabel": "List Panel Viewport",
-                                "eventMappings": [],
-                                "extensionPoints": [
-                                    {
-                                        "appShell": "76a83a645b122010b913030a1d81c780",
-                                        "controller": "5865e308432021105571609dc7b8f23b",
-                                        "controllerElementId": "list_controller",
-                                        "controllerName": "List Controller",
-                                        "inUse": false,
-                                        "isControllerPresent": true,
-                                        "name": "List Page Panes",
-                                        "subroutes": [],
-                                        "sysId": "4d9e0c2143efa11041505119ebb8f270",
-                                        "sysScope": {
-                                            "displayValue": "now-list-commons",
-                                            "scopeName": "sn_now_list_common",
-                                            "value": "015dd2fa796d247253ef940e685b9ebd"
-                                        },
-                                        "type": "viewport"
-                                    }
-                                ],
-                                "isHidden": {
-                                    "type": "JSON_LITERAL",
-                                    "value": null
-                                },
-                                "preset": null,
-                                "propertyValues": {
-                                    "pageCollectionMode": {
-                                        "type": "JSON_LITERAL",
-                                        "value": true
-                                    }
-                                },
-                                "slot": "right",
+                                "slot": null,
                                 "styles": null
                             }
-                        ]
+                        ],
+                        "layout": {
+                            "default": {
+                                "children": null,
+                                "items": [
+                                    {
+                                        "element_id": "repeater_1",
+                                        "styles": {}
+                                    }
+                                ],
+                                "root": null,
+                                "rules": {
+                                    "flex-direction": "row"
+                                },
+                                "styles": {
+                                    "align-items": "stretch",
+                                    "box-sizing": "border-box",
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "justify-content": "flex-start",
+                                    "overflow": "auto"
+                                },
+                                "type": "flex"
+                            },
+                            "version": "3.0.0"
+                        }
                     },
-                    "preset": {
-                        "controllerElementId": "list_controller",
-                        "disabledEventTargetIds": [],
-                        "id": "c98d4a8dfa4f61d096e06642b002039f"
+                    "preset": null,
+                    "propertyValues": {
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        },
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        }
                     },
-                    "propertyValues": {},
+                    "scratchPad": {
+                        "uib": {
+                            "layout": {
+                                "column": {
+                                    "columnNumber": 0,
+                                    "id": "default",
+                                    "styleConfig": {
+                                        "external": {
+                                            "display": "contents",
+                                            "width": "100%"
+                                        },
+                                        "internal": {
+                                            "align-items": "stretch",
+                                            "box-sizing": "border-box",
+                                            "flex-direction": "column",
+                                            "height": "100%",
+                                            "justify-content": "flex-start",
+                                            "overflow": "auto"
+                                        }
+                                    }
+                                },
+                                "type": "column"
+                            },
+                            "version": "1.0.0"
+                        }
+                    },
                     "slot": null,
-                    "styles": null
-                },
-                {
-                    "bundleLink": {
-                        "bundleInstanceId": "recordlist_1",
-                        "elementType": "member"
-                    },
-                    "conditionals": null,
-                    "definition": {
-                        "id": "63ea66b3c5a122819f729b7254789c34",
-                        "type": "MACROPONENT"
-                    },
-                    "elementId": "pagination_control_1",
-                    "elementLabel": "Pagination control",
-                    "eventMappings": [],
-                    "isHidden": null,
-                    "preset": {
-                        "controllerElementId": "list_controller",
-                        "disabledEventTargetIds": [],
-                        "id": "47d85e949cd381e3930037367b16fdaa"
-                    },
-                    "propertyValues": {},
-                    "slot": "",
                     "styles": null
                 }
             ],
             "layout": {
                 "default": {
                     "children": null,
+                    "isInline": null,
                     "items": [
                         {
-                            "element_id": "record_list_header_1",
-                            "styles": {}
-                        },
-                        {
-                            "element_id": "resizable_panes_1",
+                            "element_id": "__cmggklmfbbkaabbzdddffiiffvbbbbjjjjjffh__column_1",
                             "styles": {
-                                "height": "",
-                                "min-height": "305px"
-                            }
-                        },
-                        {
-                            "element_id": "pagination_control_1",
-                            "styles": {
-                                "min-height": "unset",
-                                "min-width": "unset"
+                                "display": "contents",
+                                "width": "100%"
                             }
                         }
                     ],
                     "root": null,
                     "rules": null,
                     "styles": {
-                        "flex-direction": "column",
-                        "height": "100%"
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "100fr",
+                        "grid-template-rows": "1fr",
+                        "width": "auto"
                     },
-                    "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
-                    "type": "flex"
+                    "type": "grid"
                 },
+                "queries": [
+                    {
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "box-sizing": "border-box",
+                                "grid-template-columns": "1fr",
+                                "grid-template-rows": "1fr",
+                                "height": "fit-content",
+                                "max-height": "max-content",
+                                "min-height": "min-content",
+                                "width": "auto"
+                            },
+                            "type": "grid"
+                        },
+                        "query": {
+                            "max-width": 640
+                        }
+                    }
+                ],
                 "version": "3.0.0"
             }
         },
         "preset": null,
         "propertyValues": {
-            "ariaRegionHeadingLevel": {
-                "type": "JSON_LITERAL",
-                "value": "1"
-            },
-            "ariaRegionName": {
-                "type": "TRANSLATION_LITERAL",
-                "value": {
-                    "code": null,
-                    "comment": "",
-                    "message": ""
-                }
-            },
-            "ariaRole": {
-                "type": "JSON_LITERAL",
-                "value": ""
-            },
             "hideEmptyStateUi": {
                 "type": "JSON_LITERAL",
                 "value": true
             },
-            "includeAriaHeading": {
+            "slotWrapperBehavior": {
                 "type": "JSON_LITERAL",
-                "value": false
-            },
-            "type": {
-                "type": "JSON_LITERAL",
-                "value": "section"
+                "value": "contents"
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "layout": {
+                    "columnSection": {
+                        "breakpoints": [
+                            {
+                                "behavior": "stack",
+                                "max-width": 640,
+                                "styles": {
+                                    "box-sizing": "border-box",
+                                    "grid-template-columns": "1fr",
+                                    "grid-template-rows": "1fr",
+                                    "height": "fit-content",
+                                    "max-height": "max-content",
+                                    "min-height": "min-content",
+                                    "width": "auto"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "columnNumber": 1,
+                                "unit": "%",
+                                "width": 100
+                            }
+                        ],
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "styleConfig": {
+                            "external": {
+                                "display": "contents",
+                                "width": "100%"
+                            },
+                            "internal": {
+                                "box-sizing": "border-box",
+                                "grid-template-rows": "1fr",
+                                "width": "auto"
+                            }
+                        }
+                    },
+                    "type": "columnSection"
+                },
+                "version": "1.0.0"
             }
         },
         "slot": null,
@@ -3451,6 +3480,53 @@
             "id": "c22a5b134fb2351043475c11b1ce0ba8"
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "b997a84053021010cbc2ddeeff7b1228",
+            "type": "COMPOSITE"
+        },
+        "elementId": "tasks_lookup",
+        "elementLabel": "Tasks_lookup",
+        "eventMappings": [],
+        "inputValues": {
+            "encodedQuery": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "limit": {
+                "type": "JSON_LITERAL",
+                "value": "1000"
+            },
+            "offset": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "orderBy": {
+                "type": "JSON_LITERAL"
+            },
+            "queryCategory": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "task_name,creation_date,due_date,priority,description"
+            },
+            "sortType": {
+                "type": "JSON_LITERAL",
+                "value": "asc"
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_1529240_taskbudd_tasks"
+            }
+        },
+        "readEvaluationMode": "EAGER"
     }
 ]</data>
         <description/>
@@ -3483,8 +3559,11 @@
                 }
             },
             {
-                "element_id": "list_bundle",
-                "styles": {}
+                "element_id": "column_layout_3",
+                "styles": {
+                    "display": "contents",
+                    "width": "100%"
+                }
             }
         ],
         "root": null,
@@ -3661,10 +3740,16 @@
     }
 ]</props>
         <required_translations>[ {
-  "message" : "Button",
+  "message" : "Created:",
+  "comment" : ""
+}, {
+  "message" : "Due-Date:",
   "comment" : ""
 }, {
   "message" : "Enter a label",
+  "comment" : ""
+}, {
+  "message" : "Submit",
   "comment" : ""
 }, {
   "message" : "TaskBuddy",
@@ -3692,14 +3777,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-05 14:27:20</sys_created_on>
         <sys_id>255f779783f21210e9ef58a6feaad32e</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
         <sys_update_name>sys_ux_macroponent_255f779783f21210e9ef58a6feaad32e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 09:39:58</sys_updated_on>
+        <sys_updated_on>2025-01-31 13:26:42</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=255f779783f21210e9ef58a6feaad32e"/>
 </record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 12:56:07</sys_created_on>
+        <sys_id>e2a0a9a9835bd610e9ef58a6feaad3de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bitte.admin</sys_name>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_security_acl display_value="Bitte">92a061a5835bd610e9ef58a6feaad3d4</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e2a0a9a9835bd610e9ef58a6feaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 12:56:07</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

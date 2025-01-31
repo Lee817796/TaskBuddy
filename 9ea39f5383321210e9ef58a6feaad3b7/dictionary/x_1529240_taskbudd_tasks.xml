@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="9ac7131b83321210e9ef58a6feaad304" label="tasks" max_length="40" name="x_1529240_taskbudd_tasks" type="collection">
-        <element label="Description" max_length="65536" name="description" type="wiki_text"/>
+        <element choice="3" label="Priority-Color" max_length="40" name="priority_color" type="color">
+            <choice/>
+        </element>
+        <element label="Description" max_length="65536" name="description" type="string_full_utf8"/>
         <element attributes="edge_encryption_enabled=true" label="Notes" max_length="4000" name="notes" type="journal"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" label="Creation-Date" max_length="40" name="creation_date" type="glide_date_time"/>
