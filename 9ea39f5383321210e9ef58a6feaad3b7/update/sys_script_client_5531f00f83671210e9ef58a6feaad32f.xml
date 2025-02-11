@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Priority Color pls</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   (function executeRule() {
+    // Hole den Wert des "priority"-Feldes
+    var priority = g_form.getValue('priority'); 
+
+    // Rufe das Script Include auf, um die Farbe zu berechnen
+    var priorityColor = new TaskPriorityColor().getPriorityColor(priority);
+
+    // Setze das "priority_color"-Feld mit der berechneten Farbe
+    g_form.setValue('priority_color', priorityColor);
+})();
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 11:36:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5531f00f83671210e9ef58a6feaad32f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Priority Color pls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_update_name>sys_script_client_5531f00f83671210e9ef58a6feaad32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 11:39:28</sys_updated_on>
+        <table>x_1529240_taskbudd_tasks</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

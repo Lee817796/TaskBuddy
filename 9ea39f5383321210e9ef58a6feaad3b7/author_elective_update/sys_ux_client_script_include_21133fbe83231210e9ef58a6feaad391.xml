@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script_include">
+    <sys_ux_client_script_include action="DELETE">
+        <access>package_private</access>
+        <api_name>x_1529240_taskbudd.Fill_In</api_name>
+        <includes/>
+        <name>Fill_In</name>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[var TaskBuddClientScriptInclude = Class.create();
+TaskBuddClientScriptInclude.prototype = {
+    initialize: function() {},
+    
+    // Diese Funktion wird vom UI Builder oder Client Script aufgerufen
+    setPriorityColor: function(taskRecord) {
+        // Prüfe den Wert von 'priority' und setze 'priority_color'
+        if (taskRecord.priority == 'high') {
+            taskRecord.priority_color = 'red';
+        } else if (taskRecord.priority == 'medium') {
+            taskRecord.priority_color = 'yellow';
+        } else if (taskRecord.priority == 'low') {
+            taskRecord.priority_color = 'green';
+        } else {
+            taskRecord.priority_color = 'gray';  // Standardfarbe, wenn keine Übereinstimmung
+        }
+        
+        // Optional: Führe hier eine Log-Ausgabe durch, um das Ergebnis zu überprüfen
+        gs.info('Priority Color for Task ' + taskRecord.sys_id + ': ' + taskRecord.priority_color);
+        
+        return taskRecord;  // Gib das aktualisierte Task-Objekt zurück
+    },
+
+    type: 'TaskBuddClientScriptInclude'
+};
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 07:22:21</sys_created_on>
+        <sys_id>21133fbe83231210e9ef58a6feaad391</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Fill_In</sys_name>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_update_name>sys_ux_client_script_include_21133fbe83231210e9ef58a6feaad391</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 07:34:17</sys_updated_on>
+    </sys_ux_client_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</application>
+        <file_path/>
+        <instance_id>e6da001f1bb57d109377eb9b2d4bcbb0</instance_id>
+        <instance_name>dev186522</instance_name>
+        <name>sys_ux_client_script_include_21133fbe83231210e9ef58a6feaad391</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script_include"&gt;&lt;sys_ux_client_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;api_name&gt;x_1529240_taskbudd.Fill_In&lt;/api_name&gt;&lt;includes/&gt;&lt;name&gt;Fill_In&lt;/name&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[var TaskBuddClientScriptInclude = Class.create();
+TaskBuddClientScriptInclude.prototype = {
+    initialize: function() {},
+    
+    // Diese Funktion wird vom UI Builder oder Client Script aufgerufen
+    setPriorityColor: function(taskRecord) {
+        // Prüfe den Wert von 'priority' und setze 'priority_color'
+        if (taskRecord.priority == 'high') {
+            taskRecord.priority_color = 'red';
+        } else if (taskRecord.priority == 'medium') {
+            taskRecord.priority_color = 'yellow';
+        } else if (taskRecord.priority == 'low') {
+            taskRecord.priority_color = 'green';
+        } else {
+            taskRecord.priority_color = 'gray';  // Standardfarbe, wenn keine Übereinstimmung
+        }
+        
+        // Optional: Führe hier eine Log-Ausgabe durch, um das Ergebnis zu überprüfen
+        gs.info('Priority Color for Task ' + taskRecord.sys_id + ': ' + taskRecord.priority_color);
+        
+        return taskRecord;  // Gib das aktualisierte Task-Objekt zurück
+    },
+
+    type: 'TaskBuddClientScriptInclude'
+};
+]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-10 07:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;21133fbe83231210e9ef58a6feaad391&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Fill_In&lt;/sys_name&gt;&lt;sys_package display_value="TaskBuddy" source="x_1529240_taskbudd"&gt;9ea39f5383321210e9ef58a6feaad3b7&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="TaskBuddy"&gt;9ea39f5383321210e9ef58a6feaad3b7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_include_21133fbe83231210e9ef58a6feaad391&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-10 07:34:17&lt;/sys_updated_on&gt;&lt;/sys_ux_client_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>895209089</payload_hash>
+        <record_name>Fill_In</record_name>
+        <reverted_from/>
+        <source>37230270839fd210e9ef58a6feaad345</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 07:34:17</sys_created_on>
+        <sys_id>b50a373283631210e9ef58a6feaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194eec7c5090000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 07:34:17</sys_updated_on>
+        <type>UX Client Script Include</type>
+        <update_guid>3d0a373218631210d47bc0b5cca6d8bd</update_guid>
+        <update_guid_history>3d0a373218631210d47bc0b5cca6d8bd:895209089,79e7f7365b631210a3d1df5ab278a49d:-1921838696,8747fbb2c7631210f477b95d6d64351c:1488443074</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 08:32:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script_include">sys_ux_client_script_include</sys_db_object>
+        <sys_id>46bad3b1c95343c4bf907371badd2390</sys_id>
+        <sys_metadata>21133fbe83231210e9ef58a6feaad391</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fill_In</sys_name>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_scope_delete display_value="">10b0866e88ce458a91495a0479f8e2e4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_include_21133fbe83231210e9ef58a6feaad391</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_include_21133fbe83231210e9ef58a6feaad391">b50a373283631210e9ef58a6feaad3be</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 08:32:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -30,7 +30,19 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
     current.creation_date = new GlideDateTime();
-	
+	var prio = current.priority;
+
+	if (prio == 0){
+		current.priority_color = "gray";
+	}else if (prio == 1){
+		current.priority_color = "green";
+	}else if(prio == 2){
+		current.priority_color = "brown";
+	}else if (prio == 3){
+		current.priority_color = "yellow";
+	}else if (prio == 4){
+		current.priority_color = "red";
+	}
 })(current, previous);
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -39,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ded712d483871610e9ef58a6feaad325</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CreationDate-Fill</sys_name>
         <sys_overrides/>
         <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
@@ -47,7 +59,7 @@
         <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
         <sys_update_name>sys_script_ded712d483871610e9ef58a6feaad325</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-08 09:31:46</sys_updated_on>
+        <sys_updated_on>2025-02-11 13:12:14</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
