@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Priority Color pls</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   (function executeRule() {
+    // Hole den Wert des "priority"-Feldes
+    var priority = g_form.getValue('priority'); 
+
+    // Rufe das Script Include auf, um die Farbe zu berechnen
+    var priorityColor = new TaskPriorityColor().getPriorityColor(priority);
+
+    // Setze das "priority_color"-Feld mit der berechneten Farbe
+    g_form.setValue('priority_color', priorityColor);
+})();
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 11:36:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5531f00f83671210e9ef58a6feaad32f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Priority Color pls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_update_name>sys_script_client_5531f00f83671210e9ef58a6feaad32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 11:39:28</sys_updated_on>
+        <table>x_1529240_taskbudd_tasks</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</application>
+        <file_path/>
+        <instance_id>e6da001f1bb57d109377eb9b2d4bcbb0</instance_id>
+        <instance_name>dev186522</instance_name>
+        <name>sys_script_client_5531f00f83671210e9ef58a6feaad32f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Priority Color pls&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   (function executeRule() {
+    // Hole den Wert des "priority"-Feldes
+    var priority = g_form.getValue('priority'); 
+
+    // Rufe das Script Include auf, um die Farbe zu berechnen
+    var priorityColor = new TaskPriorityColor().getPriorityColor(priority);
+
+    // Setze das "priority_color"-Feld mit der berechneten Farbe
+    g_form.setValue('priority_color', priorityColor);
+})();
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-10 11:36:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5531f00f83671210e9ef58a6feaad32f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Priority Color pls&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="TaskBuddy" source="x_1529240_taskbudd"&gt;9ea39f5383321210e9ef58a6feaad3b7&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="TaskBuddy"&gt;9ea39f5383321210e9ef58a6feaad3b7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5531f00f83671210e9ef58a6feaad32f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-10 11:39:28&lt;/sys_updated_on&gt;&lt;table&gt;x_1529240_taskbudd_tasks&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1547876149</payload_hash>
+        <record_name>Priority Color pls</record_name>
+        <reverted_from/>
+        <source>37230270839fd210e9ef58a6feaad345</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 11:39:29</sys_created_on>
+        <sys_id>6922b84f83671210e9ef58a6feaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194efa841660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 11:39:29</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>ed22b84f556712106979513da054e379</update_guid>
+        <update_guid_history>ed22b84f556712106979513da054e379:-1547876149,eac13c0fe4671210bd782addf42abfd8:430646447,cd61380f466712101e19e6cc4f693ed8:-1547876149</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-12 07:09:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3d403042878041c4a9ddc4dfca3e3871</sys_id>
+        <sys_metadata>5531f00f83671210e9ef58a6feaad32f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Priority Color pls</sys_name>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_parent display_value="tasks">9ac7131b83321210e9ef58a6feaad304</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_scope_delete display_value="">10b0866e88ce458a91495a0479f8e2e4</sys_scope_delete>
+        <sys_update_name>sys_script_client_5531f00f83671210e9ef58a6feaad32f</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5531f00f83671210e9ef58a6feaad32f">6922b84f83671210e9ef58a6feaad37a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-12 07:09:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

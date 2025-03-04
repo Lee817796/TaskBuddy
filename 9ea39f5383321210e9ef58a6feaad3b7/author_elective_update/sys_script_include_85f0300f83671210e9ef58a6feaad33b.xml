@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1529240_taskbudd.Priority Color</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Priority Color</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TaskPriorityColor = Class.create();
+TaskPriorityColor.prototype = {
+    initialize: function() {},
+
+    // Diese Funktion gibt die entsprechende Farbe basierend auf der Priorität zurück
+    getPriorityColor: function(priority) {
+        var priorityColor = '';
+        
+        // Berechne die Farbe basierend auf der Priorität
+        if (priority == '3') {
+            priorityColor = 'yellow';
+        } else if (priority == '2') {
+            priorityColor = 'brown';
+        } else if (priority == '1') {
+            priorityColor = 'green';
+        } else if (priority == '4') {
+            priorityColor = 'orange';
+        } else {
+            priorityColor = 'gray';  // Standardfarbe, falls keine Übereinstimmung
+        }
+        
+        return priorityColor;
+    },
+
+    type: 'TaskPriorityColor'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 11:34:56</sys_created_on>
+        <sys_id>85f0300f83671210e9ef58a6feaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Priority Color</sys_name>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_update_name>sys_script_include_85f0300f83671210e9ef58a6feaad33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 11:34:56</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>85f0300f83671210e9ef58a6feaad33b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 11:34:56</sys_created_on>
+        <sys_id>8b117c4b83671210e9ef58a6feaad371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 11:34:56</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</application>
+        <file_path/>
+        <instance_id>e6da001f1bb57d109377eb9b2d4bcbb0</instance_id>
+        <instance_name>dev186522</instance_name>
+        <name>sys_script_include_85f0300f83671210e9ef58a6feaad33b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1529240_taskbudd.Priority Color&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;Priority Color&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var TaskPriorityColor = Class.create();
+TaskPriorityColor.prototype = {
+    initialize: function() {},
+
+    // Diese Funktion gibt die entsprechende Farbe basierend auf der Priorität zurück
+    getPriorityColor: function(priority) {
+        var priorityColor = '';
+        
+        // Berechne die Farbe basierend auf der Priorität
+        if (priority == '3') {
+            priorityColor = 'yellow';
+        } else if (priority == '2') {
+            priorityColor = 'brown';
+        } else if (priority == '1') {
+            priorityColor = 'green';
+        } else if (priority == '4') {
+            priorityColor = 'orange';
+        } else {
+            priorityColor = 'gray';  // Standardfarbe, falls keine Übereinstimmung
+        }
+        
+        return priorityColor;
+    },
+
+    type: 'TaskPriorityColor'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-10 11:34:56&lt;/sys_created_on&gt;&lt;sys_id&gt;85f0300f83671210e9ef58a6feaad33b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Priority Color&lt;/sys_name&gt;&lt;sys_package display_value="TaskBuddy" source="x_1529240_taskbudd"&gt;9ea39f5383321210e9ef58a6feaad3b7&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="TaskBuddy"&gt;9ea39f5383321210e9ef58a6feaad3b7&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_85f0300f83671210e9ef58a6feaad33b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-10 11:34:56&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;85f0300f83671210e9ef58a6feaad33b&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-10 11:34:56&lt;/sys_created_on&gt;&lt;sys_id&gt;8b117c4b83671210e9ef58a6feaad371&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-10 11:34:56&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1874249002</payload_hash>
+        <record_name>Priority Color</record_name>
+        <reverted_from/>
+        <source>37230270839fd210e9ef58a6feaad345</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 11:34:57</sys_created_on>
+        <sys_id>5711b08b83671210e9ef58a6feaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194efa41b580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 11:34:57</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5b11b08b9f671210f650f83a161cba72</update_guid>
+        <update_guid_history>5b11b08b9f671210f650f83a161cba72:1874249002</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-12 06:56:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>30a2bb8836ef418e84d2ffbbf637bc39</sys_id>
+        <sys_metadata>85f0300f83671210e9ef58a6feaad33b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Priority Color</sys_name>
+        <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
+        <sys_scope_delete display_value="">10b0866e88ce458a91495a0479f8e2e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_85f0300f83671210e9ef58a6feaad33b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_85f0300f83671210e9ef58a6feaad33b">5711b08b83671210e9ef58a6feaad373</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-12 06:56:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

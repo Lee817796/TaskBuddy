@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Color-Sheme</name>
+        <name>PriorityColor-Fill</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,52 +29,48 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	switch (current.priority) {
-        case 4: 
-            current.priority_color = 'red';
-            break;
-        case 3:
-            current.priority_color = 'orange';
-            break;
-        case 2:
-            current.priority_color = 'brown';
-            break;
-        case 1:
-            current.priority_color = 'green';
-            break;
-		case 0:
-			current.priority_color = 'gray';
-		break;
-	}
+	var prio = current.priority;
+ 
+    if (prio == 0){
+        current.priority_color = "gray";
+    }else if (prio == 1){
+        current.priority_color = "green";
+    }else if(prio == 2){
+        current.priority_color = "brown";
+    }else if (prio == 3){
+        current.priority_color = "yellow";
+    }else if (prio == 4){
+        current.priority_color = "magenta";
+    }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-31 14:12:18</sys_created_on>
+        <sys_created_on>2025-02-12 07:04:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e78b29b783d71210e9ef58a6feaad3f0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Color-Sheme</sys_name>
+        <sys_id>33368ea783a75210e9ef58a6feaad3aa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PriorityColor-Fill</sys_name>
         <sys_overrides/>
         <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
-        <sys_update_name>sys_script_e78b29b783d71210e9ef58a6feaad3f0</sys_update_name>
+        <sys_update_name>sys_script_33368ea783a75210e9ef58a6feaad3aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-10 12:05:16</sys_updated_on>
+        <sys_updated_on>2025-02-12 13:44:32</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=e78b29b783d71210e9ef58a6feaad3f0"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=33368ea783a75210e9ef58a6feaad3aa"/>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>e78b29b783d71210e9ef58a6feaad3f0</id>
+        <id>33368ea783a75210e9ef58a6feaad3aa</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-31 14:12:17</sys_created_on>
-        <sys_id>ea35b93f83d71210e9ef58a6feaad3fd</sys_id>
+        <sys_created_on>2025-02-12 07:04:51</sys_created_on>
+        <sys_id>5e7646e783a75210e9ef58a6feaad310</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-31 14:12:17</sys_updated_on>
+        <sys_updated_on>2025-02-12 07:04:51</sys_updated_on>
         <table>sys_script</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
