@@ -734,126 +734,6 @@
         "styles": null
     },
     {
-        "bundleLink": {
-            "bundleInstanceId": "recordlist_3",
-            "elementType": "member"
-        },
-        "conditionals": null,
-        "definition": {
-            "id": "61c315e9ccb8970546c30f3e2da41a32",
-            "type": "MACROPONENT_VIEWPORT"
-        },
-        "elementId": "list_viewport_modal_3",
-        "elementLabel": "List Viewport Modal 3",
-        "eventMappings": [],
-        "extensionPoints": [
-            {
-                "controllerElementId": "list_controller_3",
-                "name": "List page modals",
-                "sysId": "33d76156b7312110a2cb18075e11a9d8"
-            }
-        ],
-        "isHidden": null,
-        "overrides": null,
-        "preset": {
-            "controllerElementId": "list_controller_3",
-            "disabledEventTargetIds": [],
-            "id": "431df4d94fc3e404af2a7a1604dd08d6"
-        },
-        "propertyValues": {
-            "disableDismiss": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "bundleLink": {
-            "bundleInstanceId": "recordlist_2",
-            "elementType": "member"
-        },
-        "conditionals": null,
-        "definition": {
-            "id": "61c315e9ccb8970546c30f3e2da41a32",
-            "type": "MACROPONENT_VIEWPORT"
-        },
-        "elementId": "list_viewport_modal_2",
-        "elementLabel": "List Viewport Modal 2",
-        "eventMappings": [],
-        "extensionPoints": [
-            {
-                "controllerElementId": "list_controller_2",
-                "name": "List page modals",
-                "sysId": "33d76156b7312110a2cb18075e11a9d8"
-            }
-        ],
-        "isHidden": null,
-        "overrides": null,
-        "preset": {
-            "controllerElementId": "list_controller_2",
-            "disabledEventTargetIds": [],
-            "id": "431df4d94fc3e404af2a7a1604dd08d6"
-        },
-        "propertyValues": {
-            "disableDismiss": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
-        "bundleLink": {
-            "bundleInstanceId": "recordlist_1",
-            "elementType": "member"
-        },
-        "conditionals": null,
-        "definition": {
-            "id": "61c315e9ccb8970546c30f3e2da41a32",
-            "type": "MACROPONENT_VIEWPORT"
-        },
-        "elementId": "list_viewport_modal",
-        "elementLabel": "List Viewport Modal",
-        "eventMappings": [],
-        "extensionPoints": [
-            {
-                "controllerElementId": "list_controller",
-                "name": "List page modals",
-                "sysId": "33d76156b7312110a2cb18075e11a9d8"
-            }
-        ],
-        "isHidden": null,
-        "overrides": null,
-        "preset": {
-            "controllerElementId": "list_controller",
-            "disabledEventTargetIds": [],
-            "id": "431df4d94fc3e404af2a7a1604dd08d6"
-        },
-        "propertyValues": {
-            "disableDismiss": {
-                "type": "JSON_LITERAL",
-                "value": false
-            },
-            "size": {
-                "type": "JSON_LITERAL",
-                "value": "md"
-            }
-        },
-        "slot": null,
-        "styles": null
-    },
-    {
         "definition": {
             "id": "d356d14b6e293a3020a244b63d278d8f",
             "type": "MACROPONENT"
@@ -1303,12 +1183,8 @@
                                         "value": null
                                     },
                                     "disabled": {
-                                        "binding": {
-                                            "address": [
-                                                "disableSubmit"
-                                            ]
-                                        },
-                                        "type": "STATE_BINDING"
+                                        "type": "JSON_LITERAL",
+                                        "value": false
                                     },
                                     "icon": {
                                         "type": "JSON_LITERAL",
@@ -1597,19 +1473,92 @@
                                                             "event": {
                                                                 "apiName": "x_1529240_taskbudd.MODAL_SELECTED_RELAY_255f779783f21210e9ef58a6feaad32e",
                                                                 "payload": {
-                                                                    "script": {
-                                                                        "apiVersion": "1.0.0",
-                                                                        "controllerElementId": null,
-                                                                        "inlineScript": "/**\n* @param {params} params\n* @param {api} params.api\n* @param {any} params.event\n @param {object} params.helpers\n*/\nfunction handler({ api, event, helpers }) {\n    // Assuming 'event' contains the selected row data from the Repeater\n    let selectedTaskData = event.context.item.value; // Get the selected task data\n    \n    // Optionally, extract specific fields like Sys ID or other details\n    let selectedTaskId = selectedTaskData.sys_id;\n    \n    // Set the selected task ID to the state parameter\n    api.setState('selectedTaskId', selectedTaskId);\n    \n    // Log the selected task ID for debugging\n    console.log(\"Selected Task Sys ID: \", selectedTaskId);\n}",
-                                                                        "scriptSysId": null,
-                                                                        "target": null
+                                                                    "container": {
+                                                                        "bare": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": false
+                                                                        },
+                                                                        "displayOptions": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        },
+                                                                        "headerLabel": {
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "task_name",
+                                                                                    "value"
+                                                                                ],
+                                                                                "category": "value"
+                                                                            },
+                                                                            "type": "REPEATER_ITEM_BINDING"
+                                                                        },
+                                                                        "modalId": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "[component-id$='custom_1']"
+                                                                        },
+                                                                        "preserveState": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        },
+                                                                        "showModal": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": true
+                                                                        },
+                                                                        "viewportElementId": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        },
+                                                                        "viewportFields": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        },
+                                                                        "viewportParams": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        },
+                                                                        "viewportRoute": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": null
+                                                                        }
                                                                     },
-                                                                    "type": "CLIENT_TRANSFORM_SCRIPT"
+                                                                    "type": "MAP_CONTAINER"
                                                                 },
                                                                 "sysId": "5264d88483f3d210e9ef58a6feaad3ff"
                                                             },
                                                             "operation": null,
                                                             "targetId": "cmhhddcjggqbaaccbbccddffiifftaeeteeeeaac",
+                                                            "type": "EVENT"
+                                                        },
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                "payload": {
+                                                                    "container": {
+                                                                        "propName": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "selectedTaskId"
+                                                                        },
+                                                                        "value": {
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "sys_id",
+                                                                                    "value"
+                                                                                ],
+                                                                                "category": "value"
+                                                                            },
+                                                                            "type": "REPEATER_ITEM_BINDING"
+                                                                        }
+                                                                    },
+                                                                    "type": "MAP_CONTAINER"
+                                                                },
+                                                                "sysId": "32408b42ff7a10109046e490703bf176"
+                                                            },
+                                                            "operation": null,
+                                                            "targetId": "cmiihheeaagmjjaabbxgddffiiffhddyggjjsiio",
                                                             "type": "EVENT"
                                                         }
                                                     ]
@@ -2250,45 +2199,38 @@
                                                 "clientScript": null,
                                                 "conditional": null,
                                                 "declarativeAction": null,
-                                                "event": {
-                                                    "apiName": "x_1529240_taskbudd.MODAL_SELECTED_RELAY_255f779783f21210e9ef58a6feaad32e",
-                                                    "payload": {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": {
-                                                            "bare": false,
-                                                            "displayOptions": null,
-                                                            "headerLabel": null,
-                                                            "modalId": "[component-id$='custom_1']",
-                                                            "preserveState": false,
-                                                            "showModal": false,
-                                                            "viewportElementId": null,
-                                                            "viewportFields": null,
-                                                            "viewportParams": null,
-                                                            "viewportRoute": null
-                                                        }
-                                                    },
-                                                    "sysId": "5264d88483f3d210e9ef58a6feaad3ff"
-                                                },
-                                                "operation": null,
-                                                "targetId": "cmhhdddbbdddwaacchheeddffiiffgthhhiijjbbe",
-                                                "type": "EVENT"
-                                            },
-                                            {
-                                                "broker": null,
-                                                "clientScript": null,
-                                                "conditional": null,
-                                                "declarativeAction": null,
                                                 "event": null,
                                                 "operation": {
-                                                    "dataBrokerId": "029f04e053610110ac9bddeeff7b1294",
-                                                    "operationName": "CTRL_RECORD#SAVE_FORM",
-                                                    "parentResourceId": "record_2",
+                                                    "dataBrokerId": "9b4b978353211010cbc2ddeeff7b1245",
+                                                    "operationName": "EXECUTE",
+                                                    "parentResourceId": "update_record_1",
                                                     "payload": {
-                                                        "type": "JSON_LITERAL",
-                                                        "value": {}
+                                                        "container": {
+                                                            "recordId": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "selectedTaskId"
+                                                                    ]
+                                                                },
+                                                                "type": "STATE_BINDING"
+                                                            },
+                                                            "table": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "x_1529240_taskbudd_tasks"
+                                                            },
+                                                            "templateFields": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": ""
+                                                            },
+                                                            "useSetDisplayValue": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
                                                     }
                                                 },
-                                                "targetId": "cmhheegqzzkaabbzpddffiiffaajgoccjjaa",
+                                                "targetId": "cmiihhcsjjghaabbwyddffiiffydpxcfftjj",
                                                 "type": "DATABROKER_OP"
                                             }
                                         ]
@@ -4409,7 +4351,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "task_name,creation_date,due_date,priority,description,priority_color"
+                "value": "task_name,creation_date,due_date,priority,description,priority_color,sys_id"
             },
             "sortType": {
                 "type": "JSON_LITERAL",
@@ -4977,20 +4919,14 @@
             "inputSysId": {
                 "binding": {
                     "address": [
-                        "sysId"
-                    ],
-                    "category": "props"
+                        "selectedTaskId"
+                    ]
                 },
-                "type": "CONTEXT_BINDING"
+                "type": "STATE_BINDING"
             },
             "inputTable": {
-                "binding": {
-                    "address": [
-                        "table"
-                    ],
-                    "category": "props"
-                },
-                "type": "CONTEXT_BINDING"
+                "type": "JSON_LITERAL",
+                "value": "x_1529240_taskbudd_tasks"
             },
             "isMappedToAppShell": {
                 "type": "JSON_LITERAL",
@@ -5047,6 +4983,34 @@
             "id": "c22a5b134fb2351043475c11b1ce0ba8"
         },
         "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "9b4b978353211010cbc2ddeeff7b1245",
+            "type": "GRAPHQL"
+        },
+        "elementId": "update_record_1",
+        "elementLabel": "Update Record 1",
+        "eventMappings": [],
+        "inputValues": {
+            "recordId": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "templateFields": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "useSetDisplayValue": {
+                "type": "JSON_LITERAL",
+                "value": null
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
     }
 ]</data>
         <description/>
@@ -5307,6 +5271,7 @@
         "valueType": "boolean"
     },
     {
+        "fieldType": "string",
         "id": "",
         "initialValue": {
             "type": "JSON_LITERAL",
@@ -5321,14 +5286,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-05 14:27:20</sys_created_on>
         <sys_id>255f779783f21210e9ef58a6feaad32e</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="TaskBuddy" source="x_1529240_taskbudd">9ea39f5383321210e9ef58a6feaad3b7</sys_package>
         <sys_policy/>
         <sys_scope display_value="TaskBuddy">9ea39f5383321210e9ef58a6feaad3b7</sys_scope>
         <sys_update_name>sys_ux_macroponent_255f779783f21210e9ef58a6feaad32e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-14 14:35:30</sys_updated_on>
+        <sys_updated_on>2025-03-13 12:57:49</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=255f779783f21210e9ef58a6feaad32e"/>
 </record_update>
